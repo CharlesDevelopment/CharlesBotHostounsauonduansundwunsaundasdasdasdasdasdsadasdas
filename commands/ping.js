@@ -2,7 +2,6 @@ const { MessageEmbed } = require('discord.js');
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
-      const msg = await message.channel.send("Pinging...");
       const Embed = new MessageEmbed()
         .setTitle("Pong!")
         .setAuthor(`${message.author.username}` , message.author.displayAvatarURL())
