@@ -1,20 +1,25 @@
-const Discord = require('discord.js');
-const config = require('../botsettings.json');
+const { MessageEmbed } = require('discord.js');
+const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
+      const msg = await message.channel.send("Pinging...");
+      const Embed = new MessageEmbed()
+        .setTitle("Pong!")
+        .setAuthor(`${message.author.username}` , message.author.displayAvatarURL())
+        .setDescription(
+          `⌛ Latency is ${Math.floor(
+            msg.createdTimestamp - message.createdTimestamp
+          )}ms\n⏲️ API Ping is ${Math.round(client.ws.ping)}`
+        )
+        .setColor('#fb644c');
+      msg.edit(Embed);
+      msg.edit("\u200b");
+    }
 
-    let pingembed = new Discord.MessageEmbed()
-    .setColor('RANDOM')
-    .setTitle("🏓 Pong!")
-    .addField("Your Ping !", `\`${Math.round(bot.ws.ping)} ms\``)
-    .setTimestamp()
-    message.channel.send(pingembed)
-}
-
-module.exports.config = {
-    name: "ping",
-    description: "",
-    usage: "/ping",
-    accessableby: "Members",
-    aliases: []
-}
+    module.exports.config = {
+        name: "ping",
+        description: "",
+        usage: "/ping",
+        accessableby: "Members",
+        aliases: []
+    }
