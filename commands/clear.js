@@ -4,7 +4,7 @@ const Discord = require("discord.js")
 module.exports.run = async (bot, message, args) => {
         if (!message.member.permissions.has("MANAGE_MESSAGES")) // sets the permission
             return message.channel.send(
-                `You do not have correct permissions to do this action, ${message.author.username}` // returns this message to user with no perms
+                `You do not have correct permissions to do this action` // returns this message to user with no perms
             );
         if (!args[0]) {
             return message.channel.send(`Please enter a amount 1 to 100`)
