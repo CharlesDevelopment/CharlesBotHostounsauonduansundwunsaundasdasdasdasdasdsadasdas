@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setTitle('Invite Me!')
-        .setURL('https://discord.com/oauth2/authorize?client_id=751792109110952007&scope=bot&permissions=2094394615')
+        .setURL('https://bit.ly/3jXls68')
         .setAuthor('Charles')
         .setDescription('⬆️ Click To Invite The Bot ')
         .setColor('RANDOM')
