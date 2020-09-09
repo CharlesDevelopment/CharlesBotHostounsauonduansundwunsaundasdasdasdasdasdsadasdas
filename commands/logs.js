@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         .addFields(
             { name: 'Update 06/09/2020', value: '`+ Added /help`   `+ Added /Memberinfo`   `+ Added /clear`', inline: true},
             { name: 'Update 07/09/2020', value: '`+ Added /logs`   `+ Changes All Command With Photos Charles!`', inline: true},
-            { name: 'Update 07/09/2020', value: '`+ Added /meme`   `+ Added /cat`  `+ Added /dog`  `= Updated /help`   `+ Added /ping`', inline: true},
+            { name: 'Update 08/09/2020', value: '`+ Added /meme`   `+ Added /cat`  `+ Added /dog`  `= Updated /help`   `+ Added /ping`', inline: true},
         )
         .setTimestamp()
 
