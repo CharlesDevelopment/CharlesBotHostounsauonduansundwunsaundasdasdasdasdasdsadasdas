@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
 
     const embed = new Discord.MessageEmbed()
     .setImage(img)
-    .setTitle(`From /r/${random}`)
+    .setTitle(`Memes :>`)
     .setURL(`http://reddit.com/${random}`)
 
     message.channel.send(embed);
