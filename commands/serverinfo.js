@@ -79,3 +79,11 @@ module.exports.run  = async (bot, message, args) => {
         await message.channel.send(embed)
     }
 }
+
+module.exports.config = {
+    name: "serverinfo",
+    description: "Shows the information of a member/user",
+    usage: "/serverinfo",
+    accessableby: "Members",
+    aliases: ['serverinfo']
+}
