@@ -1,9 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 
-module.exports = {
-    name: "server-info",
-    category: "extra",
-    run: async (client, message, args) => {
+module.exports.run  = async (bot, message, args) => {
         let region;
         switch (message.guild.region) {
             case "europe":
@@ -25,7 +22,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
             .setThumbnail(message.guild.iconURL({dynamic : true}))
-            .setColor('#f3f3f3')
+            .setColor('RANDOM')
             .setTitle(`${message.guild.name} server stats`)
             .addFields(
                 {
