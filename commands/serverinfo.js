@@ -1,4 +1,5 @@
 const { MessageEmbed } = require('discord.js');
+const Discord = require("discord.js")
 
 module.exports.run  = async (bot, message, args) => {
         let region;
@@ -78,7 +79,6 @@ module.exports.run  = async (bot, message, args) => {
             )
         await message.channel.send(embed)
     }
-}
 
 module.exports.config = {
     name: "serverinfo",
