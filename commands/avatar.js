@@ -11,4 +11,12 @@ module.exports.run = async (bot, message, args) => {
             return message.channel.send(embed)
         }            
     }
+
+
+module.exports.config = {
+    name: "Avatar",
+    description: "Shows the information of a member/user",
+    usage: "/avatar",
+    accessableby: "Members",
+    aliases: []
 }
