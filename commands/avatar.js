@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
  
 module.exports.run = async (bot, message, args) => {
-        const { prefix, token } = require ('../config.json');
         const embed = new Discord.MessageEmbed()
  
         if(!message.mentions.users.first()){
