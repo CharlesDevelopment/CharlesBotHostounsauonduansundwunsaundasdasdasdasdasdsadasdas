@@ -16,9 +16,9 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.config = {
-    name: "panda",
+    name: "fox",
     description: "",
-    usage: "/panda",
+    usage: "/fox",
     accessableby: "Members",
     aliases: []
 }
