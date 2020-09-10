@@ -4,18 +4,11 @@ module.exports.run = async (bot, message, args) => {
         const embed = new Discord.MessageEmbed()
 
         if(!message.mentions.users.first()){
-            embed.setTitle(`${user.tag}'s Avatar:`)
-            embed.setThumbnail(user.displayAvatarURL())
-            embed.setDescription(`This is ${user.tag}'s avatar.`)
-            embed.setColor('RANDOM')
-            embed.setFooter(`${user.tag} Avatar`)
+            embed.setTitle(`${user.tag} Avatar`)
+            embed.setImage(message.author.displayAvatarURL())
+            embed.setDescription("This is your avatar.")
+            embed.setColor("RANDOM")
             return message.channel.send(embed)
+        }            
     }
-}
-module.exports.config = {
-    name: "Avatar",
-    description: "Shows the information of a member/user",
-    usage: "/avatar",
-    accessableby: "Members",
-    aliases: []
 }
