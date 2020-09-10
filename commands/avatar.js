@@ -1,21 +1,21 @@
 const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
-        const embed = new Discord.MessageEmbed()
+    embed = new Discord.MessageEmbed()
+    let user = message.mentions.users.first()
+    embed
+    .setTitle(`${user.tag}'s Avatar`)
+    .setThumbnail(user.displayavatarURL())
+    .addField(`UserName: ${user.tag}`, true)
+    .setColor(`RANDOM`)
+    message.channel.send(embed);
 
-        if(!message.mentions.users.first()){
-            embed.setTitle(`${user.tag} Avatar`)
-            embed.setImage(message.author.displayAvatarURL())
-            embed.setDescription("This is your avatar.")
-            embed.setColor("RANDOM")
-            return message.channel.send(embed)
-        }            
-    }
 
+}
 
 module.exports.config = {
     name: "Avatar",
-    description: "Shows the information of a member/user",
+    descrption: "",
     usage: "/avatar",
     accessableby: "Members",
     aliases: []
