@@ -1,7 +1,7 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
-    msg.channel.send(args.join(" "), { allowedMentions: { parse: ["user"]}});
+    message.channel.send(args.join(" "), { allowedMentions: { parse: ["user"]}});
 }
 
 module.exports.config = {
