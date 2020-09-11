@@ -3,7 +3,7 @@ const Discord = require("discord.js")
 module.exports.run = async (bot, message, args) => {
    let MSG = message.content.split(`/f `).join("")
    if(!MSG)return message.channel.send(`You Did Not Specify Your Message To Send!`)
-   message.channel.send(Press F For MSG)
+   message.channel.send(MSG)
    await MSG.react('🇫')
 }
 
