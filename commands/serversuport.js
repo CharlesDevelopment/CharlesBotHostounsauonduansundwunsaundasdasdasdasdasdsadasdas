@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setTitle('Join Support Server !')
-        .setURL('https://discord.io/Charles')
+        .setURL('https://discord.gg/zfxQQ7N')
         .setAuthor('Charles Community')
         .setDescription('⬆️ Click To Join Support Server ')
         .setColor('RANDOM')
