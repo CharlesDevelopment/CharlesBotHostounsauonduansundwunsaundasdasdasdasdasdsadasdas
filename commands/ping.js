@@ -3,12 +3,12 @@ const config = require('../botsettings.json');
 
 module.exports.run = async (bot, message, args) => {
 
-    let pingembed = new Discord.MessageEmbed()
-    .setColor('RANDOM')
-    .setTitle("🏓 Pong!")
-    .addField("Your Ping !", `\`${Date.now() - message.createdTimestamp}\`ms``)
-    .setTimestamp()
-    message.channel.send(pingembed)
+        const ping = new Discord.MessageEmbed()
+        .setDescription(`🏓\`${Date.now() - message.createdTimestamp}\`ms`);
+
+
+        message.channel.send(ping);
+    }
 }
 
 module.exports.config = {
