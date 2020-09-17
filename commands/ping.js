@@ -1,5 +1,4 @@
-const Discord = require('discord.js');
-const config = require('../botsettings.json');
+const Discord = require('discord.js')
 
 module.exports.run = async (bot, message, args) => {
 
@@ -9,11 +8,10 @@ module.exports.run = async (bot, message, args) => {
 
         message.channel.send(ping);
     }
-}
 
 module.exports.config = {
     name: "ping",
-    description: "",
+    description: "Shows the information of a member/user",
     usage: "/ping",
     accessableby: "Members",
     aliases: []
