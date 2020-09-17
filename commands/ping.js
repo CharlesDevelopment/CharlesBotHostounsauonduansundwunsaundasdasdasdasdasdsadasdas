@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     let pingembed = new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setTitle("🏓 Pong!")
-    .addField("Your Ping !", `\`${Math.round(bot.ws.ping)} ms\``)
+    .addField("Your Ping !", `\`${Date.now() - message.createdTimestamp}\`ms``)
     .setTimestamp()
     message.channel.send(pingembed)
 }
