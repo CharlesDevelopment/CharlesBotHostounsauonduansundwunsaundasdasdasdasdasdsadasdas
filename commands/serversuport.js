@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "support",
-    description: "pUp :u",
+    description: "pUp u",
     usage: "/support",
     accessableby: "Members",
     aliases: []
