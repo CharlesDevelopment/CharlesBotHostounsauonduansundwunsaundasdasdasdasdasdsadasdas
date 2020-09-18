@@ -2,9 +2,6 @@ const Discord = require('discord.js');
 const botsettings = require('./botsettings.json');
 
 const bot = new Discord.Client({disableEveryone: true});
-const { Player } = require("discord-player");
-const player = new Player(client);
-bot.player = player;
 
 require("./util/eventHandler")(bot)
 
