@@ -9,15 +9,23 @@
   "author": "Charles Calvin",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.3.2",
+    "discord-leveling": "^1.1.0",
+    "discord-player": "^2.3.1",
     "discord.js": "^12.3.1",
     "fs": "0.0.1-security",
     "got": "^11.6.0",
+    "merge-options": "^3.0.3",
     "moment": "^2.27.0",
     "ms": "^2.1.2",
+    "node-fetch": "^2.6.1",
     "opusscript": "0.0.7",
     "parse-ms": "^2.1.0",
     "random-puppy": "^1.1.0",
+    "spotify-url-info": "^2.0.0",
     "youtube-api-search": "0.0.5",
-    "ytdl-core": "^3.2.2"
+    "ytdl-core": "^3.2.2",
+    "ytpl": "^1.0.1",
+    "ytsr": "^1.0.1"
   }
 }
