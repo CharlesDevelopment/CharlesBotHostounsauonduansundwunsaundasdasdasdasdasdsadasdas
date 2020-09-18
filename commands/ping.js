@@ -1,19 +1,18 @@
-const Discord = require('discord.js');
-const config = require('../botsettings.json');
+const Discord = require('discord.js')
 
 module.exports.run = async (bot, message, args) => {
 
-    let pingembed = new Discord.MessageEmbed()
-    .setColor('RANDOM')
-    .setTitle("🏓 Pong!")
-    .addField("Your Ping !", `\`${Math.round(bot.ws.ping)} ms\``)
-    .setTimestamp()
-    message.channel.send(pingembed)
-}
+        const ping = new Discord.MessageEmbed()
+        .setTitle('Pong!')
+        .setDescription(`🏓\`${Date.now() - message.createdTimestamp}\`ms`);
+
+
+        message.channel.send(ping);
+    }
 
 module.exports.config = {
     name: "ping",
-    description: "",
+    description: "Shows the information of a member/user",
     usage: "/ping",
     accessableby: "Members",
     aliases: []
