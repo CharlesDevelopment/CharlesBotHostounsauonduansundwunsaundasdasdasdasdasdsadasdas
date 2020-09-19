@@ -13,6 +13,7 @@
     "fs": "0.0.1-security",
     "got": "^11.6.0",
     "moment": "^2.27.0",
+    "mongoose": "^5.10.6",
     "ms": "^2.1.2",
     "opusscript": "0.0.7",
     "parse-ms": "^2.1.0",
