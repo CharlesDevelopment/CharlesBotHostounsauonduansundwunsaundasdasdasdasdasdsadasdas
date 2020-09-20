@@ -11,4 +11,6 @@ module.exports.config = {
     name: "f",
     description: "Shows the information of a member/user",
     usage: "/F",
+    accessableby: "Members",
+    aliases: []
 }
