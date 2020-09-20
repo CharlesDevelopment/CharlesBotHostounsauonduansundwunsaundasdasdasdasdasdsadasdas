@@ -3,7 +3,7 @@ const ping = require("minecraft-server-util")
 
 module.exports.run = async (bot, message, args) => {
  
-    let args = message.content.substring(PREFIX.length).split(' ')
+    const args = message.content.substring(PREFIX.length).split(' ')
  
     switch(args[0]){
         case 'mc':
