@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     if(!helpArgs[0]) {
         var embed = new Discord.MessageEmbed()
             .setAuthor(`Here is the Avaible Commands to use:`)
-            .setDescription('```clear | invite | memberinfo | logs | dog | cat | meme | ping | panda | serverinfo| support```')
+            .setDescription('```clear | invite | memberinfo | logs | dog | cat | meme | ping | panda | serverinfo| support | ban | kick```')
             .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
             .addFields({ name: 'Prefix', value: '```/```', inline: true})
             .setColor('RANDOM')
