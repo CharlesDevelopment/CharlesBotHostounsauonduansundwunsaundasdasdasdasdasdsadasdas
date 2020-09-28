@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: "logs",
     description: "example of an Embed.",
-    usage: "/logs",
+    usage: "/donate",
     accessableby: "Members",
     aliases: []
 }
