@@ -4,11 +4,6 @@ module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
         .setAuthor('Support Developer!')
         .setDescription('Saweria')
-        .setURL('https://bit.ly/2GlCcoY')
-        .setDescription('Patreon')
-        .setURL('https://bit.ly/30gIXzD')
-        .setDescription('Support Server')
-        .setURL('https://bit.ly/3n0hhcc')
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
 
