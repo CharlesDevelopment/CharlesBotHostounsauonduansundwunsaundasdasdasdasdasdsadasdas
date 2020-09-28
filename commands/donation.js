@@ -2,14 +2,13 @@ const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
-        .setTitle('Logs Updates Bot')
+        .setTitle('Donate !')
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
-        .setFooter('+ Means Added , = Means Updated And - Means Deleted')
         .addFields(
-            { name: 'Update 07/09/2020', value: '`+ Added /logs`   `+ Changes All Command With Photos Charles!`', inline: true},
-            { name: 'Update 08/09/2020', value: '`+ Added /meme`   `+ Added /cat`  `+ Added /dog`  `= Updated /help`   `+ Added /ping`', inline: true},
-            { name: 'Support Server', url: 'ew.com', inline: true},
+            { name: '`Saweria: https://bit.ly/2GlCcoY`', inline: true},
+            { name: '`Patreon: https://bit.ly/30gIXzD`', inline: true},
+            { name: '`Support Server: https://bit.ly/3n0hhcc `',inline: true},
         )
         .setTimestamp()
 
@@ -18,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.config = {
-    name: "logs",
+    name: "donate",
     description: "example of an Embed.",
     usage: "/donate",
     accessableby: "Members",
