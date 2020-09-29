@@ -6,9 +6,9 @@ module.exports.run = async (bot, message, args) => {
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
         .addFields(
-            { name: '`Saweria: https://bit.ly/2GlCcoY`', inline: true},
-            { name: '`Patreon: https://bit.ly/30gIXzD`', inline: true},
-            { name: '`Support Server: https://bit.ly/3n0hhcc `',inline: true},
+            { name: '/donate patreon', inline: true},
+            { name: '/donate saweria', inline: true},
+            { name: '/support',inline: true},
         )
         .setTimestamp()
 

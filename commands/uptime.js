@@ -10,7 +10,7 @@ module.exports.config = {
     description: "example of an Embed.",
     usage: "/uptime",
     accessableby: "Members",
-    aliases: ["online"]
+    aliases: []
 }
 
 

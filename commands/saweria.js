@@ -2,24 +2,21 @@ const Discord = require('discord.js');
 
 module.exports.run = async (bot, message, args) => {
     const embed = new Discord.MessageEmbed()
-        .setTitle('Invite Me!')
-        .setURL('https://bit.ly/3jXls68')
-        .setAuthor('Charles')
-        .setDescription('⬆️ Click To Invite The Bot ')
+        .setTitle('Donate !')
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
-        .setFooter('⚠️ WARNING : All Command is BETA SomeTimes The Command Cant Be Loaded..')
+        .setDescription('Saweria')
+        .setURL('')
         .setTimestamp()
-        
 
 
     message.channel.send(embed);
 }
 
 module.exports.config = {
-    name: "invite",
-    description: "pUp :u",
-    usage: "/invite",
+    name: "donate",
+    description: "example of an Embed.",
+    usage: "/donate saweria",
     accessableby: "Members",
     aliases: []
 }
