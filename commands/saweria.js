@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
         .setColor('RANDOM')
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
         .setDescription('Saweria')
-        .setURL('')
+        .setURL('https://bit.ly/2GlCcoY')
         .setTimestamp()
 
 
