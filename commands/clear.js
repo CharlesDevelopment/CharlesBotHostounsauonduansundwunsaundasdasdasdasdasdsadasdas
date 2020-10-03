@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(`successfully deleted ${deleteAmount} Messages!`)
             .setFooter(message.author.username, message.author.displayAvatarURL())
             .setColor('#f2f2f2')
-            message.react('761809589909717033')
+            msg.react('761809589909717033')
         await message.channel.send(embed)
     }
 
