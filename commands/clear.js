@@ -26,6 +26,9 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(`successfully deleted ${deleteAmount} Messages!`)
             .setFooter(message.author.username, message.author.displayAvatarURL())
             .setColor('#f2f2f2')
+            const reactionEmoji = message.guild.emojis.cache.find(emoji => emoji.name === 'Done')
+            message.react(reactionEmoji)    
+            .setTimestamp()
         await message.channel.send(embed)
     }
 
