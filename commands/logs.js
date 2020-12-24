@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
         .setFooter('+ Means Added , = Means Updated And - Means Deleted')
         .addFields(
-            { name: 'Update 07/09/2020', value: '`+ Added /slowmode command`   `+Reset Logs`  `+ Added /rps (still Bug)`   `+ Added /nuke command', inline: true},
+            { name: 'Update 07/09/2020', value: '`+ Added /slowmode command`   `+Reset Logs`  `+ Added /rps (still Bug)`   `+ Added /nuke command`', inline: true},
         )
         .setTimestamp()
 
