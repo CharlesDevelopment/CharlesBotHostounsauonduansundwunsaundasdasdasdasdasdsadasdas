@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         let reason = args.slice(1).join(" ")
         
         message.channel.setRateLimitPerUser(duration, reason)
-        message.reply(`Successfully set the slowmode to ${duration}`)
+        message.reply(`Successfully set the slowmode to ${duration} Seconds`)
     }
 
 module.exports.config = {
