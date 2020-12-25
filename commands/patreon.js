@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "donate",
-    description: "example of an Embed.",
+    description: "Donate",
     usage: "/patreon",
     accessableby: "Members",
     aliases: []

@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "nuke",
-    description: "Shows the information of a member/user",
+    description: "Nuke Channel",
     usage: "/nuke",
     accessableby: "Admins",
     aliases: []

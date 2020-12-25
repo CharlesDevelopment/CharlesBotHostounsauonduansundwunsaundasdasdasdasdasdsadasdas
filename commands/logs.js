@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "logs",
-    description: "example of an Embed.",
+    description: "logs update",
     usage: "/logs",
     accessableby: "Members",
     aliases: []

@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "ping",
-    description: "Shows the information of a member/user",
+    description: "Check Your Ping",
     usage: "/ping",
     accessableby: "Members",
     aliases: []

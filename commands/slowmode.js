@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: "slowmode",
-    description: "Shows the information of a member/user",
+    description: "set slowmode",
     usage: "/slowmode",
     accessableby: "Admins",
     aliases: []

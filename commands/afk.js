@@ -1,9 +1,10 @@
 const Discord = require("discord.js")
 
 module.exports.run = async (bot, message, args) => {
+  if (msg.startsWith(prefix + 'afk')) {
     const status = new db.table("AFKs");
     let afk = await status.fetch(message.author.id);
-    const embed = new Discord.MessageEmbed().setColor(RANDOM)
+    const embed = new Discord.MessageEmbed().setColor(0xffffff)
     
     if (!afk) {
       embed.setDescription(`**${message.author.tag}** now AFK.`)
@@ -16,6 +17,7 @@ module.exports.run = async (bot, message, args) => {
     
     message.channel.send(embed)
   }
+}
 
   module.exports.config = {
     name: "AFK",
