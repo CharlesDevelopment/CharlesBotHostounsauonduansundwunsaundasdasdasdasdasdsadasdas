@@ -1,29 +1,22 @@
 const Discord = require("discord.js")
-const db = require("quick.db")
+const db = require('quick.db')
+const { MessageEmbed } = require('discord.js')
 
 module.exports.run = async (bot, message, args) => {
-  if (msg.startsWith(prefix + 'afk')) {
-    const status = new db.table("AFKs");
-    let afk = await status.fetch(message.author.id);
-    const embed = new Discord.MessageEmbed().setColor(0xffffff)
-    
-    if (!afk) {
-      embed.setDescription(`**${message.author.tag}** now AFK.`)
-      embed.setFooter(`Reason: ${args.join(" ") ? args.join(" ") : "AFK"}`)
-      status.set(message.author.id, args.join(" ") || `AFK`);
-    } else {
-      embed.setDescription("You are no longer AFK.");
-      status.delete(message.author.id);
-    }
-    
-    message.channel.send(embed)
-  }
+      const content = args.join(" ")
+      await db.set(`afk-${message.author.id}+${message.guild.id}`, content)
+      const embed = new MessageEmbed()
+      .setDescription(`You have been set to afk\n**Reason :** ${content}`)
+      .setColor("GREEN")
+      .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic : true }))
+      message.channel.send(embed)                
 }
 
-  module.exports.config = {
-    name: "AFK",
-    description: "AFK",
-    usage: "/afk",
-    accessableby: "Members",
-    aliases: []
-  }
+
+module.exports.config = {
+  name: "AFK",
+  description: "AFK",
+  usage: "/afk",
+  accessableby: "Members",
+  aliases: []
+}
