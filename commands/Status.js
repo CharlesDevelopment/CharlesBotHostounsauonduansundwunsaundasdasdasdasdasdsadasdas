@@ -7,17 +7,15 @@ module.exports.run = async (bot, message, args) => {
         .setAuthor('Charles')
         .setDescription('⬆️ Click The Link ')
         .setColor('RANDOM')
-        .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
         .setTimestamp()
         
-
-
     message.channel.send(embed);
 }
 
+
 module.exports.config = {
     name: "Status",
-    description: "",
+    description: "Status",
     usage: "/status",
     accessableby: "Members",
     aliases: []
