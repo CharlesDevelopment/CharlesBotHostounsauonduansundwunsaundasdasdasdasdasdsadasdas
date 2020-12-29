@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
     const cacheTime = 30 * 1000; // 30 sec cache time
     let data, lastUpdated = 0;
     
-    client.on('message', message => { // Listen for messages and trigger commands
+    Discord.client.on('message', message => { // Listen for messages and trigger commands
         if(message.content.trim() == commands.status.command) {
             statusCommand(message)
         } else if(message.content.trim() == commands.ip.command) {
