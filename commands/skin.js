@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const mojangjs = require('mojangjs');
-const { isValidNickname } = require('../lib/dispixelutil');
+
 
 module.exports.run = async (bot, message, args) => {
 		if (args.length !== 1) {
