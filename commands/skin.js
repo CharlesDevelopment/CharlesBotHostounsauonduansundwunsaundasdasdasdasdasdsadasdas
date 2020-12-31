@@ -11,12 +11,6 @@ module.exports.run = async (bot, message, args) => {
 
 		const nickname = args[0];
 
-		if (!isValidNickname(nickname)) {
-			return message.reply(
-				'The username is too long, Minecraft usernames can only be 16 characters'
-			);
-		}
-
 		mojangjs
 			.getUUID(nickname)
 			.then(uuid => {
