@@ -33,6 +33,14 @@ const commands = {
 const cacheTime = 30 * 1000; // 30 sec cache time
 let data, lastUpdated = 0;
 
+client.online('message', message => { // Listen for messages and trigger commands
+    if(message.content.trim() == commands.status.command) {
+        statusCommand(message)
+    } else if(message.content.trim() == commands.ip.command) {
+        ipCommand(message)
+    }
+});
+
 function statusCommand(message) { // Handle status command
     if(Date.now() > lastUpdated + cacheTime) { // Cache expired or doesn't exist
         util.status(server.ip, { port: server.port })
