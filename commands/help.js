@@ -13,15 +13,6 @@ module.exports.run = async (bot, message, args) => {
     //Normal usage of (prefix)help without any args. (Shows all of the commands and you should set the commands yourself)
     if(!helpArgs[0]) {
         var embed = new Discord.MessageEmbed()
-        return message.author.send(response, {  split: true  })
-        .then(() => {
-            //tell user the repsonse is in the DMs if the command's been sent in a server
-            if(message.channel.type === 'dm') return;
-            message.reply('check your DMs for a full list of commands');
-        })
-        .catch(error => {
-            message.reply('please be sure to activate DMs from this server\'s members');
-        })
             .setAuthor(`Here is the Avaible Commands to use:`)
             .setDescription('```rps(still BUG) | slowmode | nuke | clear | invite | memberinfo | status | dog | cat | meme | ping | panda | serverinfo | ban | kick```')
             .setThumbnail('https://cdn.discordapp.com/attachments/741546722400010281/752138723839442954/uwuken.jpg')
