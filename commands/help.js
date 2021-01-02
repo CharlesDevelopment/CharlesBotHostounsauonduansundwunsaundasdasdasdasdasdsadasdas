@@ -19,6 +19,15 @@ module.exports.run = async (bot, message, args) => {
             .addFields({ name: 'Prefix', value: '```/```', inline: true})
             .setColor('RANDOM')
             .setFooter('Sometimes The Command Will Be Updates..')
+            return message.author.send(response, {  split: true  })
+            .then(() => {
+                //tell user the repsonse is in the DMs if the command's been sent in a server
+                if(message.channel.type === 'dm') return;
+                message.reply('check your DMs for a full list of commands');
+            })
+            .catch(error => {
+                message.reply('please be sure to activate DMs from this server\'s members');
+            })
             
         message.channel.send(embed);
     }
